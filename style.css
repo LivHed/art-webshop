@@ -1,0 +1,51 @@
+body {
+    margin: 8%;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+h1 {
+    font-size: 90px;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+a {
+    color:#fe859f;
+}
+
+a:hover {
+    color: #ca022d;
+}
+
+/* Styling for all products – these are children to all-products */
+
+.product {
+	border: solid #fe859f 0.5px;
+	margin: 10px;
+	padding: 30px;
+	width: 25%;
+}
+
+.product:hover {
+    opacity: 1;
+    background-color: #e6e6e6;
+}
+
+.product img {
+	width: 100%;
+}
+
+/* .all-products are parent to .product, which is the one who decides how all the products will be placed.  */
+
+.all-products {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+} 
